@@ -1,0 +1,115 @@
+# === GameSlop strong ignore — never commit secrets or build junk ===
+# Secrets / signing
+Keys/
+**/Keys/
+secrets/
+**/secrets/
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+*.jks
+*.keystore
+**/*.jks
+**/*.keystore
+play-sa.json
+**/play-sa.json
+*-sa.json
+**/*-sa.json
+**/google-services.json
+**/GoogleService-Info.plist
+studio.token
+**/studio.token
+*.pem
+*.p12
+*.mobileprovision
+credentials.json
+**/credentials.json
+local.properties
+**/local.properties
+**/keystore.properties
+**/key.properties
+
+# Dependencies & caches
+node_modules/
+**/node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.gradle/
+**/.gradle/
+.kotlin/
+**/.kotlin/
+.cache/
+**/.cache/
+.turbo/
+.parcel-cache/
+
+# Android / iOS build outputs
+android/app/build/
+**/android/app/build/
+android/build/
+**/android/build/
+android/.gradle/
+**/android/app/release/
+**/android/app/debug/
+**/captures/
+ios/App/Pods/
+**/DerivedData/
+*.apk
+*.ap_
+*.aab
+*.ipa
+
+# Web / desktop build outputs
+dist/
+**/dist/
+build/
+**/build/
+.output/
+.vercel/output/
+.release/
+release/
+out/
+coverage/
+*.tsbuildinfo
+
+# Large archives / binaries (prefer source + docs + store assets)
+*.zip
+*.7z
+*.rar
+*.exe
+*.msi
+*.dmg
+*.AppImage
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.lnk
+*.log
+
+# Local runtime / saves / review noise
+_local_runtime/
+saves/*.json
+saves/*.bak
+!saves/.gitkeep
+_entropy_review_shots/
+.tanstack/
+.node_modules.lock
+
+# Cap / tooling noise that may contain machine paths
+**/.vercel/
+# Iron Hall / art pipeline intermediates (regenerate locally)
+assets/sprites/walk/out/
+assets/sprites/walk/video/
+assets/sprites/walk/cycle4/
+**/bundletool.jar
+android/app/src/main/assets/
+artifacts/
+.grok/
